@@ -1,0 +1,30 @@
+Solutions:
+
+- Movies button that has a dropdown list to show different movie genres. For
+  example: Action, Sci-Fi, Comedy ...etc, When you click one of them it should
+  load the movies for that genre.
+  
+  Solve it with adding event listener and fetching the needing data from the database.
+	
+- Search box where you can type the movie or actor name and display the related results.
+
+	using filter go over the rendered data and find the realted data and display them
+	
+
+- single movie page
+	we need to get the info from the movies/videos thing by making the youtube link and key merged.
+
+	Fetch the corsponding data and display it  in the container.
+
+- single actor page
+
+	innerHtml change and displaying the wanted info.
+	
+
+-styling with bootstrap + CSS
+
+-------------------------------------------------------------------------------------
+THINGS TO INPROVE
+
+	
+	
