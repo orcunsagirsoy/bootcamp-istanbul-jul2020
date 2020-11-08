@@ -1,0 +1,418 @@
+/*styles added to homepage starts here */
+body {
+  background-color: black;
+  
+}
+
+#moviesNav {
+  height: auto;
+  max-height: 150px;
+  overflow-x: hidden;
+  overflow-y: scroll;
+}
+
+/* styling  movies in homepage starts here*/
+.home-page-row {
+  display: flex;
+  margin-top: 1rem;
+  margin: 0;
+  padding: 0;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-content: flex-start;
+}
+
+/* 
+.home-page-row card {
+  
+} */
+.home-page-card {
+  width: 30%;
+  margin: 1rem .5rem;
+  border: none;
+}
+
+.home-page-img {
+  width: 100%;
+  padding: 0 !important;
+}
+
+.homepage-title {
+  font-size: 1.5rem;
+  padding-top: 1rem;
+  padding-bottom: .6rem;
+}
+
+.hover-more-detalis {
+  opacity: 0;
+  display: block;
+  position: absolute;
+  text-align: center;
+  padding-top: 25%;
+  width: 100%;
+  height: 100%;
+  color: white;
+  background: rgb(147, 0, 0);
+  background: linear-gradient(0deg, rgba(147, 0, 0, 0) 0%, rgba(147, 0, 0, 0.8519782913165266) 39%, rgba(212, 0, 0, 0.5634628851540616) 74%, rgba(212, 0, 0, 0) 100%);
+  transition: all .2s ease-in-out;
+}
+
+.hover-more-detalis:hover {
+  cursor: pointer;
+}
+
+#hover-id:hover {
+  opacity: 1;
+  transition: all .2s ease-in-out;
+  cursor: pointer;
+}
+
+/*styling single movie page starts here
+this is for the main image*/
+#image_movie_div {
+  width: 100%;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  z-index: -1;
+}
+
+.shadow_effect {
+  position: absolute;
+  z-index: -1;
+  width: 80%;
+  height: 85%;
+  background: rgb(0, 0, 0);
+  background: linear-gradient(90deg, rgba(0, 0, 0, 1) 39%, rgba(0, 0, 0, 0.5074404761904762) 48%, rgba(0, 0, 0, 0) 72%, rgba(0, 0, 0, 0) 100%);
+}
+
+.single_movie_img {
+  right: 0;
+  position: absolute;
+  height: 85%;
+  z-index: -2;
+}
+
+#try {
+  display: relative;
+}
+
+/* this is related to infomration next to the image:name, geners , date*/
+.short_info span,
+#single-actor-page span {
+  font-family: 'Black Ops One';
+  font-size: 3rem;
+}
+
+.short_info {
+  position: relative;
+  color: white;
+  z-index: 2;
+  width: 50%;
+}
+
+/* this is related to genres*/
+#genres {
+  font-size: .8rem;
+  padding: .8rem;
+  text-align: center;
+  width: 6rem;
+  border-radius: 1rem;
+  background: rgb(147, 0, 0);
+  background: linear-gradient(90deg, rgba(147, 0, 0, 1) 39%, rgba(212, 0, 0, 1) 100%);
+}
+
+/*this is related to overview*/
+#movie-overview {
+  width: 75%;
+  font-size: .8rem;
+  color: rgb(189, 189, 189);
+}
+
+/*this is related to more infomration like director and language*/
+.more_info {
+  display: flex;
+  font-size: 1rem;
+}
+
+#second-part .card {
+    margin-bottom: 2rem;
+  }
+
+.more_info p:first-child {
+  padding-right: 2rem;
+}
+
+.more_info:nth-of-type(2) {
+  color: rgba(212, 0, 0, 1);
+}
+
+#actor-header,
+#production-header,
+#second-part h3 {
+  color: white;
+  padding: .7rem 0;
+}
+
+#production-text {
+  font-size: .6rem
+}
+
+#trailer {
+  display: flex;
+  justify-content: center;
+}
+
+iframe {
+  border: solid .1rem white;
+  border-radius: .3rem;
+  justify-self: center;
+}
+
+/* styling actor page*/
+#actor-backdrop {
+  width: 20rem;
+  border-radius: 1rem;
+}
+
+#single-actor-page {
+  color: white;
+}
+
+#single-actor-page .card {
+  color: #212529;
+}
+
+/* these where already there*/
+/* #movie-backdrop {
+      width: 100%;
+  }
+   .container {
+    padding-top: 32px;
+  } 
+  #actors {
+      margin: 24px 16px 0 0;
+  } */
+/***These are related to home page but I added them bottom to over write bootstrap styles***/
+#container {
+  width: 100vw;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+img:hover {
+  cursor: pointer;
+}
+
+.navbar {
+  background: transparent;
+  width: 100%;
+  padding: 1rem 5rem;
+}
+
+a#actors.nav-link {
+  margin: 0;
+}
+
+.black {
+  background-color: #000 !important;
+}
+
+/*** this is for search ***/
+.form-control {
+  background: transparent;
+  border-radius: 4rem;
+  border-color: white;
+}
+
+.search_button {
+  border-radius: 4rem;
+  border: solid white .1rem;
+  background: black;
+  color: white;
+}
+
+.search_button:hover {
+  background: rgba(212, 0, 0, 1);
+  border: solid rgba(212, 0, 0, 1) .1rem;
+}
+
+.form-control:focus {
+  border-color: rgba(212, 0, 0, 1);
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(255, 0, 0, 0.6);
+}
+
+.search_button:active,
+.search_button:focus {
+  background: rgba(212, 0, 0, 1) !important;
+  border-color: rgba(212, 0, 0, 1) !important;
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(255, 0, 0, 0.6) !important;
+}
+
+a:hover {
+  color: rgba(212, 0, 0, 1) !important;
+}
+
+.dropdown-menu a:active {
+  background-color: rgba(212, 0, 0, 1) !important;
+  color: white !important;
+}
+
+.form-control::-webkit-input-placeholder {
+  color: rgb(189, 189, 189);
+}
+
+/***** Responsive design *****/
+@media only screen and (min-width: 375px) and (max-width: 667px) {
+  #container {
+    margin: 0;
+    padding: 0;
+  }
+
+  .navbar {
+    margin: auto;
+    padding: 1rem;
+  }
+
+  .home-page-card {
+    width: 90%;
+  }
+
+  .shadow_effect {
+    width: 60%;
+  }
+
+  .single_movie_img {
+    position: relative;
+    object-fit: contain;
+    bottom: 8%;
+    width: 100%
+  }
+
+  .short_info span,
+  #single-actor-page span {
+    font-size: 2rem;
+  }
+
+  .short_info {
+    margin-top: 4rem;
+    padding: 1.5rem;
+    width: 100vw;
+  }
+
+  #movie-title{
+    width:6rem;
+  }
+  #movie-overview {
+    position: relative;
+    text-align: justify;
+    width: 100%;
+  }
+
+  .more_info {
+    flex-direction: column;
+  }
+
+  #second-part {
+    margin: 1.5rem 1rem 1rem 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+  }
+
+  #second-part .card {
+    width: 100%;
+    margin: 2rem 4rem;
+  }
+
+  #single-actor-page {
+    margin: 2rem .8rem;
+  }
+
+  #actor-name {
+    margin-top: 2rem;
+  }
+
+  #single-actor-page .card {
+    margin: 1rem 1rem 2rem 3.5rem;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+
+  .home-page-card {
+    width: 45%;
+  }
+
+  .shadow_effect {
+    width: 80%;
+  }
+
+  .single_movie_img {
+    position: relative;
+    object-fit: contain;
+    bottom: 8%;
+    width: 100%
+  }
+
+  .short_info span,
+  #single-actor-page span {
+    font-size: 4rem;
+  }
+
+  .short_info {
+    margin-top: 4rem;
+    padding: 1.5rem;
+    width: 90vw;
+  }
+  #movie-title{
+    width:6rem;
+  }
+
+  #first-part p {
+    font-size: 1rem;
+  }
+
+  #movie-overview {
+    position: relative;
+    text-align: justify;
+    width: 100%;
+  }
+
+  .more_info {
+    flex-direction: column;
+    flex-wrap: wrap;
+    font-size: 2rem !important;
+  }
+
+  #production-company .card {
+    width: 40%;
+  }
+
+  #second-part .card {
+    margin-bottom: 2rem;
+  }
+
+  #single-actor-page {
+    margin: 2rem .8rem;
+  }
+
+  #actor-name {
+    margin-top: 2rem;
+  }
+
+  #single-actor-page .card {
+    margin: 1rem 1rem 2rem 3.5rem;
+  }
+
+  #actor-backdrop {
+    width: 100%;
+  }
+  
+}
+
+
+
